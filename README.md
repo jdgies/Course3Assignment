@@ -20,7 +20,7 @@ Original Assignment Instructions from JHU are included at the bottom of this fil
 ## Scripts
 The run_analysis.R script performs the data transformation on the UCI HAR Dataset to produce a tidy, labelled data set merging test and training data into one file with subject ids, feature and activity labels.
 
-### Requirements
+## Requirements
 Data must be obtained and extracted in advance. Optional code for getting and extracting the data from web source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) is included in the script comments under Step 1: Get Data.
 
 Data is expected in a "UCI HAR Dataset" folder with "test" and "train" sub-folders containing the data files for their respective runs of the experiment. These are merged by the script into one tidy data set which is written into the working directory as "tidy_HAR_dataset.txt"
@@ -38,7 +38,7 @@ Files used from the UCI HAR Dataset include:
 - 'test/X_test.txt' : Test data set - unlabelled (2947 obs. of 561 variables)
 - 'train/X_train.txt' : Training data set - unlabelled (7352 obs. of 561 variables)
 
-#       
+# <br>      
 
 For more details about the raw data, the transformations performed, and the resulting data set, please see CodeBook.md.
 
