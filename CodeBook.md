@@ -22,7 +22,7 @@ found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Us
 In data transformations (below) the data is merged into one final data set and variable columns are reduced to just the variables representing mean or standard deviation.
 
 For details, see also the original data set 'features_info.txt' file. In summary:
-- variables prefixed with 't' denote time domain signals
+- variables prefixed with 't' denote time domain signals (captured at rate=50Hz and filtered to remove noise)
 - variables prefixed with 'f' denote frequency domain signals
 - variables ending in -XYZ indicate the direction of the movement
 - acceleration variables are split into Body and Gravity signals for:
