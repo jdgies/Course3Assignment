@@ -1,21 +1,37 @@
 ---
 title: "README: Getting & Cleaning Data Course Project"
 author: "Jennifer Gies"
-date: "June 1, 2016"
+date: "June 4, 2016"
 ---
 
 # Course 3 Assignment
 Assignment: Getting and Cleaning Data Course Project
 
 ## Introduction
-This README.md file describes the steps performed to transform, tidy and analyze the <i> Human Activity Recognition Using Smartphones Data Set </i> found here: 
+This README.md file explains how all  the scripts work and how they are connected.
+
+<i> Human Activity Recognition Using Smartphones Data Set </i> found here: 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The exercise was undertaken for the Course Project for JHU Getting & Cleaning Data - Course 3 in the Data Science Specialization.
-Instructions are included at the bottom of this file.
+Original Assignment Instructions from JHU are included at the bottom of this file.
 
-## Data Preparation
+## Scripts
+The run_analysis.R script performs the data transformation as described below and in the CodeBook.md
+
+Files used from the UCI HAR Dataset include:
+- 'activity_labels.txt' : activity labels for each of the numbered activities [1:6]
+- 'features.txt' : data feature labels for 561 column variables of the X_test and X_train data
+- 'train/X_train.txt' : Training data set (7352 obs. of 561 variables)
+- 'test/X_test.txt' : Test data set (2947 obs. of 561 variables)
+- 'train/y_train.txt' : numbered activities [1:6] for training data
+- 'test/y_test.txt' : numbered activities [1:6] for test data
+- 'train/subject_train.txt' : The numbered subject (subjectid) performing the training activity [1:30]
+- 'test/subject_test.txt' :  The numbered subject (subjectid) performing the test activity [1:30]
+
+
+## Data Transformation Steps
 
 <b>Step 1:</b> Get Data:
 <li> - The run_analysis.R script reads in applicable files from the "UCI HAR Dataset" as downloaded and extracted from the url above. 
@@ -43,7 +59,7 @@ Instructions are included at the bottom of this file.
 <b>Step 6:</b> Write data to file:
 <li> - use write.table(..., row.name = FALSE) to write data to a file.
 
-## Instructions
+## Assignment Instructions
 <i> the following instructions are taken verbatim from the course: </i>
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
@@ -55,7 +71,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 4. The README that explains the analysis files is clear and understandable.
 5. The work submitted for this project is the work of the student who submitted it.
 
-<b>Getting and Cleaning Data Course Projectless </b>
+<b>Getting and Cleaning Data Course Project </b>
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
