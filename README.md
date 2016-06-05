@@ -23,7 +23,9 @@ The run_analysis.R script performs the data transformation on the UCI HAR Datase
 ## Requirements
 Data must be obtained and extracted in advance. Optional code for getting and extracting the data from web source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) is included in the script comments under Step 1: Get Data.
 
-Data is expected in a "UCI HAR Dataset" folder with "test" and "train" sub-folders containing the data files for their respective runs of the experiment. These are merged by the script into one tidy data set which is written into the working directory as "tidy_HAR_dataset.txt"
+Data is expected in a "UCI HAR Dataset" folder within the working directory. This folder should have "test" and "train" sub-folders containing the data files for their respective runs of the experiment.
+
+These are merged by the script into one tidy data set which is written into the working directory as "tidy_HAR_dataset.txt"
 
 A second independent tidy dataset is generated with the average of each variable by activity & subject. It is written into the working directory as "HAR_averages.txt"
 
