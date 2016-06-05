@@ -32,11 +32,11 @@ For details, see also the original data set 'features_info.txt' file. In summary
   - and body linear acceleration and angular velocity were derived in time to obtain jerk (Jerk)
 
 The included set of variables that were estimated from these signals are: 
-- mean(): Mean value
-- std(): Standard deviation
-- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- mean: Mean value
+- std: Standard deviation
+- meanFreq: Weighted average of the frequency components to obtain a mean frequency
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle variable:
 - gravityMean
 - tBodyAccMean
 - tBodyAccJerkMean
@@ -46,47 +46,47 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 The variables in the resulting data set are:
 - subjectid : the id of the subject performing the activity
 - activity: the named activity (rather than the number 1:6)
-- tBodyAcc-mean()-XYZ
-- tBodyAcc-std()-XYZ
-- tGravityAcc-mean()-XYZ
-- tGravityAcc-std()-XYZ
-- tBodyAccJerk-mean()-XYZ
-- tBodyAccJerk-std()-XYZ
-- tBodyGyro-mean()-XYZ
-- tBodyGyro-std()-XYZ
-- tBodyGyroJerk-mean()-XYZ
-- tBodyGyroJerk-std()-XYZ
-- tBodyAccMag-mean()
-- tBodyAccMag-std()
-- tGravityAccMag-mean()
-- tGravityAccMag-std()
-- tBodyAccJerkMag-mean()
-- tBodyAccJerkMag-std()
-- tBodyGyroMag-mean()
-- tBodyGyroMag-std()
-- tBodyGyroJerkMag-mean()
-- tBodyGyroJerkMag-std()
-- fBodyAcc-mean()-XYZ
-- fBodyAcc-std()-XYZ
-- fBodyAcc-meanFreq()-XYZ
-- fBodyAccJerk-mean()-XYZ
-- fBodyAccJerk-std()-XYZ
-- fBodyAccJerk-meanFreq()-XYZ
-- fBodyGyro-mean()-XYZ
-- fBodyGyro-std()-XYZ
-- fBodyGyro-meanFreq()-XYZ
-- fBodyAccMag-mean()
-- fBodyAccMag-std()
-- fBodyAccMag-meanFreq()
-- fBodyBodyAccJerkMag-mean()
-- fBodyBodyAccJerkMag-std()
-- fBodyBodyAccJerkMag-meanFreq()
-- fBodyBodyGyroMag-mean()
-- fBodyBodyGyroMag-std()
-- fBodyBodyGyroMag-meanFreq()
-- fBodyBodyGyroJerkMag-mean()
-- fBodyBodyGyroJerkMag-std()
-- fBodyBodyGyroJerkMag-meanFreq()
+- tBodyAcc-mean-XYZ
+- tBodyAcc-std-XYZ
+- tGravityAcc-mean-XYZ
+- tGravityAcc-std-XYZ
+- tBodyAccJerk-mean-XYZ
+- tBodyAccJerk-std-XYZ
+- tBodyGyro-mean-XYZ
+- tBodyGyro-std-XYZ
+- tBodyGyroJerk-mean-XYZ
+- tBodyGyroJerk-std-XYZ
+- tBodyAccMag-mean
+- tBodyAccMag-std
+- tGravityAccMag-mean
+- tGravityAccMag-std
+- tBodyAccJerkMag-mean
+- tBodyAccJerkMag-std
+- tBodyGyroMag-mean
+- tBodyGyroMag-std
+- tBodyGyroJerkMag-mean
+- tBodyGyroJerkMag-std
+- fBodyAcc-mean-XYZ
+- fBodyAcc-std-XYZ
+- fBodyAcc-meanFreq-XYZ
+- fBodyAccJerk-mean-XYZ
+- fBodyAccJerk-std-XYZ
+- fBodyAccJerk-meanFreq-XYZ
+- fBodyGyro-mean-XYZ
+- fBodyGyro-std-XYZ
+- fBodyGyro-meanFreq-XYZ
+- fBodyAccMag-mean
+- fBodyAccMag-std
+- fBodyAccMag-meanFreq
+- fBodyBodyAccJerkMag-mean
+- fBodyBodyAccJerkMag-std
+- fBodyBodyAccJerkMag-meanFreq
+- fBodyBodyGyroMag-mean
+- fBodyBodyGyroMag-std
+- fBodyBodyGyroMag-meanFreq
+- fBodyBodyGyroJerkMag-mean
+- fBodyBodyGyroJerkMag-std
+- fBodyBodyGyroJerkMag-meanFreq
 
 
 ## Data Transformations Performed
