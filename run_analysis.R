@@ -38,15 +38,19 @@ X_train         <- read.table(fileNames[8])
 ## Step 2: Descriptive Names   ##
 #################################
 
-## line labels up to activities performed (and then remove activity id column)
+# merge statements create incorrect results. Replacing after great feedback from peer review - thank you
+#test_data <- merge(y_test, activity_labels, by.x="V1", by.y="V1", sort=FALSE)
+#train_data <- merge(y_train, activity_labels, by.x="V1", by.y="V1", sort=FALSE)
+#test_data <- subset(test_data, select=-V1)
+#train_data <- subset(train_data, select=-V1)
 
-test_data <- merge(y_test, activity_labels, by.x="V1", by.y="V1", sort=FALSE)
-train_data <- merge(y_train, activity_labels, by.x="V1", by.y="V1", sort=FALSE)
-test_data <- subset(test_data, select=-V1)
-train_data <- subset(train_data, select=-V1)
+## make descriptive activity labels
+
+test_data <- activity_labels[y_test[[1]],]$V2
+train_data <- activity_labels[y_train[[1]],]$V2
 
 
-## add the subject id column for the subject doing the activity
+## add the subject id column to the activity activity
 
 test_data <- cbind(subject_test, test_data)
 train_data <- cbind(subject_train, train_data)
@@ -75,7 +79,7 @@ colnames(X_train) <- sub("\\(\\)", "", features$V2)
 ##################################
 
 # look for only mean | standard deviation rows and subset on those (2)
-
+# not sure if meanFreq columns should be included but after reviewing the original codebook, decided yes, they should
 X_test <- X_test[,grepl("-mean|-std", colnames(X_test))]
 X_train <- X_train[,grepl("-mean|-std", colnames(X_train))]
 
